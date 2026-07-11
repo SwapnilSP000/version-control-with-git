@@ -6,10 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-07-11
+
 ### Added
-- Initial project structure
-- Documentation and workflow guidance
-- Branching strategy and Git commands reference
+- Jenkins CI/CD documentation
+- Jenkinsfile pipeline
+- Git workflow improvements
+- Project documentation updates
 
 ## [1.0.0] - 2026-07-03
 

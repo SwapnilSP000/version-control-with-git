@@ -32,8 +32,8 @@ git config --list
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/<username>/DevOps-Git-Workflow-Demo.git
-cd DevOps-Git-Workflow-Demo
+git clone https://github.com/<username>/version-control-with-git.git
+cd version-control-with-git
 ```
 
 ## Initial Commit
@@ -51,7 +51,7 @@ git commit -m "chore: initial project structure"
 Add the remote and push the repository:
 
 ```bash
-git remote add origin https://github.com/<username>/DevOps-Git-Workflow-Demo.git
+git remote add origin https://github.com/<username>/version-control-with-git.git
 git branch -M main
 git push -u origin main
 ```
