@@ -18,6 +18,7 @@ A structured layout is critical for managing version control assets, examples, d
     *   [`setup.md`](./setup.md): Environment setup and initial configurations.
     *   [`workflow.md`](./workflow.md): Explanations of feature branches, hotfixes, and release pipelines.
     *   [`branching-strategy.md`](./branching-strategy.md): Visual representations of branch hierarchies.
+    *   [`git-best-practices.md`](./git-best-practices.md): Git commit rules, naming conventions, and security policies.
     *   [`git-commands.md`](./git-commands.md): Command reference cheat sheet.
     *   [`release-process.md`](./release-process.md): Instructions for tagging, publishing releases, and versioning.
     *   [`project-structure.md`](./project-structure.md) *(this document)*: Overview of directories and core developer workflows.
