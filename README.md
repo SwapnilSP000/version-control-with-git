@@ -105,6 +105,7 @@ version-control-with-git/
 │   └── git-workflow-diagram.png
 ├── docs/
 │   ├── branching-strategy.md
+│   ├── git-best-practices.md
 │   ├── git-commands.md
 │   ├── project-structure.md
 │   ├── release-process.md
