@@ -11,15 +11,15 @@ This section explains a standard Git workflow from feature development through r
 5. Open a pull request into `dev`.
 6. Review and merge after approval.
 
-## Example Workflow
+## Workflow Implementation
 
 ```bash
 git switch dev
 git pull origin dev
-git checkout -b feature/examples
+git checkout -b feature/workflow-docs
 git add .
-git commit -m "docs: add example workflows"
-git push origin feature/examples
+git commit -m "docs: add workflow implementation guide"
+git push origin feature/workflow-docs
 ```
 
 ## Pull Request Process
@@ -38,7 +38,7 @@ git push origin feature/examples
 5. Tag the release.
 6. Merge `main` back into `dev` to keep history aligned.
 
-## Release Example
+## Release Branch Configuration
 
 ```bash
 git switch dev

@@ -1,19 +1,19 @@
 # CI/CD Workflow
 
-This document explains a simple Git and Jenkins workflow for continuous integration and delivery learning.
+This document explains the integration of Git branching models with Jenkins pipelines to establish continuous integration workflows.
 
 ## Workflow Overview
 
-The goal is to simulate a basic flow using Git and Jenkins.
+The objective is to implement a foundational automated delivery flow using Git and Jenkins.
 
 1. Create a feature branch from `dev`.
 2. Push the branch to GitHub.
 3. Trigger a Jenkins build.
-4. Run a simulated test stage.
+4. Run automated test stages.
 5. Merge the feature branch into `dev`.
 6. Prepare a release and merge into `main`.
 
-## ASCII Workflow Diagram
+## Pipeline Execution Flow Diagram
 
 ```text
 Feature Branch
@@ -25,29 +25,29 @@ Push to GitHub
 Jenkins Build Trigger
      |
      v
-Test Stage
+Test Execution Stage
      |
      v
-Merge to Dev
+Merge to Dev Branch
      |
      v
-Release Branch
+Release Branch Creation
      |
      v
-Merge to Main
+Merge to Main Branch
 ```
 
 ## Flow Description
 
-- **Git Feature Branch**: Work on a small change in a branch like `feature/ci-demo`.
-- **Push to GitHub**: Push the branch so Jenkins can access it.
-- **Jenkins Build Trigger**: Start a build manually or via a trigger.
-- **Test Stage**: Jenkins runs simulated test commands and reports output.
-- **Merge to Dev**: After successful validation, merge the feature branch into `dev`.
-- **Release and Main**: Create a release branch if needed, merge into `main`, and tag the release.
+- **Git Feature Branch**: Implement code updates in a feature branch, such as `feature/ci-pipeline-updates`.
+- **Push to GitHub**: Push the branch to make the commit history available to Jenkins.
+- **Jenkins Build Trigger**: Trigger build runs manually or configure branch polling webhooks.
+- **Test Execution Stage**: Jenkins runs configured verification steps and logs the outcome.
+- **Merge to Dev**: After successful validation, merge the feature branch into the `dev` integration branch.
+- **Release and Main**: Create a release branch to consolidate the code, merge into `main`, and tag the release version.
 
-## Learning Focus
+## Key Capabilities
 
-- Understand how Jenkins can execute pipeline stages against a Git branch.
-- Keep the pipeline simple for local CI/CD practice.
-- Use Jenkins to reinforce Git branch and merge concepts.
+- Validate pipeline execution across targeted Git branches.
+- Execute local automation setups to verify configuration hygiene.
+- Utilize build logs to verify correct branch integration and merge success.

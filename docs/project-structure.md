@@ -10,7 +10,7 @@ A structured layout is critical for managing version control assets, examples, d
 
 ### 1. `assets/`
 *   **Purpose**: Stores diagrams and reference assets used in repository documentation, such as the Git workflow diagram (`git-workflow-diagram.md`).
-*   **Best Practice**: Use markdown files for diagrams where possible to prevent binary repository bloat.
+*   **Guideline**: Use markdown files for diagrams where possible to prevent binary repository bloat.
 
 ### 2. `docs/`
 *   **Purpose**: Centralized home for project guides and technical specifications.
@@ -39,7 +39,7 @@ A structured layout is critical for managing version control assets, examples, d
 
 ### 5. `screenshots/`
 *   **Purpose**: Folder dedicated to screenshot evidence confirming project setup and successful pipeline execution.
-*   **Best Practice**: Capture and add real screenshots here according to the naming guidelines detailed in [`screenshots/README.md`](file:///d:/Devops/EL/EL-version-control-with-git/screenshots/README.md) to showcase execution capability to reviewers.
+*   **Guideline**: Capture and add real screenshots here according to the naming guidelines detailed in [`screenshots/README.md`](file:///d:/Devops/EL/EL-version-control-with-git/screenshots/README.md) to showcase execution capability to reviewers.
 
 ---
 

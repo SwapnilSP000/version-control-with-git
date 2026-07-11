@@ -19,7 +19,7 @@ main
   └── dev
         ├── feature/documentation
         ├── feature/git-commands
-        ├── feature/examples
+        ├── feature/workflow-configs
         └── release/v1.0
 ```
 
@@ -68,7 +68,7 @@ main
 └─ dev
    ├─ feature/documentation
    ├─ feature/git-commands
-   ├─ feature/examples
+   ├─ feature/workflow-configs
    └─ release/v1.0
 ```
 

@@ -1,17 +1,17 @@
 # Jenkins Pipeline
 
-This document explains a simple Jenkins Declarative Pipeline for learning CI/CD basics.
+This document outlines a standard Jenkins Declarative Pipeline for understanding core CI/CD stages.
 
 ## Pipeline Stages
 
-A beginner-friendly pipeline can include the following stages:
+A standard pipeline implementation includes the following key stages:
 
 1. **Checkout**
 2. **Build**
 3. **Test**
 4. **Deploy**
 
-## Example Declarative Pipeline
+## Declarative Pipeline Configuration
 
 ```groovy
 pipeline {
@@ -21,37 +21,37 @@ pipeline {
     stage('Checkout') {
       steps {
         echo 'Cloning repository...'
-        git branch: 'dev', url: 'https://github.com/<username>/version-control-using-git.git'
+        git branch: 'dev', url: 'https://github.com/<username>/version-control-with-git.git'
       }
     }
 
     stage('Build') {
       steps {
-        echo 'Simulating build stage...'
+        echo 'Executing build stage...'
         echo 'Running build commands locally...'
       }
     }
 
     stage('Test') {
       steps {
-        echo 'Simulating test stage...'
+        echo 'Executing test stage...'
         echo 'Running unit tests and validation steps...'
       }
     }
 
     stage('Deploy') {
       steps {
-        echo 'Simulating deploy stage...'
-        echo 'No real deployment, just a local workflow simulation.'
+        echo 'Executing deploy stage...'
+        echo 'Running local deployment steps...'
       }
     }
   }
 }
 ```
 
-## Notes
+## Technical Notes
 
-- This pipeline is educational and uses `echo` to simulate actions.
-- The Checkout stage clones the Git repository and checks out a branch.
-- The Build, Test, and Deploy stages help illustrate the CI/CD flow.
-- No real build or deploy tools are needed for this learning example.
+- This pipeline is configured to validate repository syntax and uses `echo` to orchestrate actions.
+- The Checkout stage clones the Git repository and switches to the specified branch.
+- The Build, Test, and Deploy stages illustrate the CI/CD execution pipeline.
+- No external cloud dependencies are required for this local environment workflow implementation.

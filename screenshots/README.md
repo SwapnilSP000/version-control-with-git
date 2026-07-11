@@ -41,4 +41,4 @@ To document your work for portfolio evaluation, please capture and add the follo
    - **Verification**: Shows log entries mapping to each pipeline stage and the final build status (`SUCCESS`).
 
 ---
-*Note: When showcasing this project, replace these placeholders with actual screenshots from your local or staging environment to demonstrate your hand-on execution of the DevOps practices.*
+*Note: When showcasing this project, replace these placeholders with actual screenshots from your local or staging environment to demonstrate your hands-on execution of the DevOps workflows.*

@@ -11,7 +11,7 @@ Create feature branches from `dev` using the pattern:
 - `release/<version>`
 - `hotfix/<short-description>`
 
-Example:
+Workflow Configuration:
 
 ```bash
 git switch dev
