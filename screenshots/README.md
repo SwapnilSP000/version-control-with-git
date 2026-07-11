@@ -1,44 +1,44 @@
-# Project Screenshots Guide
+# Project Screenshots & Verification Guide
 
-This directory is reserved for screenshots demonstrating the Git/GitHub collaboration workflow and Jenkins CI/CD pipeline execution. 
+This directory is reserved for screenshots demonstrating the version control workflow, GitHub collaboration, and Jenkins pipeline execution. 
 
 To document your work for portfolio evaluation, please capture and add the following screenshots to this directory using these exact names:
 
-### GitHub Workflows
+### GitHub Operations & Collaboration
 
 1. **`github-repository.png`**
-   - **Description**: The main page of your GitHub repository.
-   - **Verification**: Displays the repository structure, commit count, and the README layout.
+   - **Purpose**: Shows repository structure and GitHub project setup.
+   - **Verification**: Displays the main page of your repository, including the file tree and commit count.
 
 2. **`github-branches.png`**
-   - **Description**: The branches overview page on GitHub.
-   - **Verification**: Shows the branching structure containing `main`, `dev`, and any active/merged feature branches.
+   - **Purpose**: Displays the active and merged branches in the remote repository.
+   - **Verification**: Shows the branch overview page on GitHub with `main`, `dev`, and feature branches.
 
 3. **`github-pull-request.png`**
-   - **Description**: An active or open Pull Request (PR) page.
-   - **Verification**: Shows the PR from `feature/*` (or `dev`) to `main`, including description, code changes, and reviewers.
+   - **Purpose**: Shows the feature branch pull request workflow.
+   - **Verification**: Displays an open pull request (e.g., from `feature/documentation` into `dev` or `main`), including changes and review notes.
 
 4. **`github-merge-success.png`**
-   - **Description**: A successfully merged Pull Request.
-   - **Verification**: Shows the green "Merged" status badge on GitHub.
+   - **Purpose**: Confirms the successful integration of code changes.
+   - **Verification**: Displays the merged status of a pull request on GitHub (purple merged badge).
 
 5. **`github-release-tag.png`**
-   - **Description**: The releases/tags page on GitHub.
-   - **Verification**: Displays release versions (e.g., `v1.0.0`, `v1.1.0`) with annotated release notes.
+   - **Purpose**: Shows version tagging and release management.
+   - **Verification**: Displays the GitHub Releases or Tags page showing tagged release versions (e.g., `v1.1.0`).
 
-### Jenkins Pipeline execution
+### Jenkins Pipeline Execution
 
 6. **`jenkins-dashboard.png`**
-   - **Description**: The main Jenkins dashboard page.
-   - **Verification**: Shows the list of configured pipeline jobs (e.g., `version-control-with-git` or `EL-Task-2-Jenkins-CICD`) and their build statuses.
+   - **Purpose**: Displays the configured pipeline jobs.
+   - **Verification**: Shows the Jenkins main dashboard showing your job build status and history.
 
 7. **`jenkins-pipeline-success.png`**
-   - **Description**: The pipeline stage view of a successful execution.
-   - **Verification**: Displays the green block diagram for stages: `Checkout`, `Build`, `Test`, and `Deploy`.
+   - **Purpose**: Displays the pipeline stage view of a successful execution.
+   - **Verification**: Shows the pipeline stage view representing stages: `Checkout`, `Build`, `Test`, and `Deploy` with successful runs.
 
 8. **`jenkins-console-output.png`**
-   - **Description**: The console logs of the successful build run.
-   - **Verification**: Shows log entries mapping to each pipeline stage and the final build status (`SUCCESS`).
+   - **Purpose**: Displays build logs confirming successful compilation and validation.
+   - **Verification**: Shows the Jenkins job console output logs showing the execution of each stage and a final status of `SUCCESS`.
 
 ---
-*Note: When showcasing this project, replace these placeholders with actual screenshots from your local or staging environment to demonstrate your hands-on execution of the DevOps workflows.*
+*Note: Replace placeholder references with your actual environment screenshots to build your custom DevOps portfolio.*

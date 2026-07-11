@@ -10,9 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - Jenkins CI/CD documentation
-- Jenkinsfile pipeline
-- Git workflow improvements
-- Project documentation updates
+- Jenkinsfile pipeline example
+- Improved Git workflow documentation
+- Screenshot documentation
+- Repository structure improvements
 
 ## [1.0.0] - 2026-07-03
 

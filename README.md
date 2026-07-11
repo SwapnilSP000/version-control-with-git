@@ -1,48 +1,78 @@
 # Version Control With Git
 
-A structured repository implementing Git version control practices, GitHub collaboration workflows, branching strategies, release management, and Jenkins CI/CD automation.
+A structured repository implementing Git version control workflows, GitHub collaboration practices, release management, and local Jenkins CI/CD automation.
 
-## Overview
+---
 
-This configuration implements DevOps workflows and Git repository management models. It is designed to demonstrate:
+## Project Overview
 
-*   **Git Repository Management**: Standard procedures for code versioning, commit hygiene, and history management.
-*   **Branch-Based Development Workflow**: Isolation of changes using feature branches to maintain a stable primary codebase.
-*   **Pull Request Collaboration**: Code review integration, webhook notifications, and merge conflict resolution.
-*   **Version Tagging**: Semantic versioning and release tags for tracking production milestones.
-*   **Jenkins Pipeline Integration**: Automation setups to check code quality and build steps locally.
+This repository demonstrates industry-standard version control workflows and CI/CD foundations. In DevOps, version control is the single source of truth; a disciplined Git workflow prevents integration collisions, guarantees software quality, and acts as the trigger for automated delivery pipelines.
+
+### Skills Demonstrated
+*   **Git Repository Organization**: Formulating branch workflows and keeping commit histories structured.
+*   **GitHub Collaboration**: Operating pull requests, reviewing code changes, and resolving integration conflicts.
+*   **Release Management**: Managing version tagging and releases using semantic versioning specifications.
+*   **Continuous Integration**: Building multi-stage pipeline triggers using a declarative Jenkinsfile.
+
+---
+
+## Features Demonstrated
+
+*   **Git Branching Strategy**: Separating active development code (`dev`) from stable release code (`main`).
+*   **Feature Development Workflow**: Isolated code creation using transient `feature/*` branches.
+*   **Pull Requests**: Documenting code modifications and requesting integration checks.
+*   **Code Review Process**: Staging pull requests for team reviews and checks before integration.
+*   **Merge Workflow**: Utilizing Git merges to consolidate codebase branches cleanly.
+*   **Version Tagging**: Generating annotated Git release tags (e.g. `v1.1.0`) to track milestones.
+*   **Jenkins CI/CD Basics**: Automating execution stages to verify branch logic.
 
 ---
 
 ## Tech Stack
 
-*   **Git**: Distributing version control and history tracking.
-*   **GitHub**: Central collaboration platform for pull request reviews and repository hosting.
-*   **Jenkins**: Automation server for continuous integration pipeline runs.
-*   **Markdown**: Structural documentation formatting.
-*   **VS Code**: Local workspace development environment.
+*   **Git**: Command-line version control.
+*   **GitHub**: Central collaboration platform for managing code reviews, pull requests, and releases.
+*   **Jenkins**: Automation server for running local build and test pipelines.
+*   **Markdown**: Standard format for technical documentation.
+*   **VS Code**: Development environment and workspace editor.
 
 ---
 
-## Repository Workflow
+## Git Workflow
 
-The code integration process flows through automated verification gates to ensure main branch health:
+The integration cycle follows a structured release progression:
 
 ```text
 Feature Branch
-      ↓
-Pull Request
-      ↓
+       │
+       ▼
 Development Branch
-      ↓
+       │
+       ▼
+Pull Request
+       │
+       ▼
 Main Branch
-      ↓
-Jenkins Pipeline
+       │
+       ▼
+Release Tag
 ```
 
 ---
 
-## Jenkins Pipeline Screenshots
+## Jenkins Integration
+
+This repository includes a declarative `Jenkinsfile` configuring local pipeline execution. Jenkins runs locally on `http://localhost:8080` to automate build validation on code updates.
+
+### Pipeline Stages
+1.  **Checkout**: Clones and checkouts the source code branch.
+2.  **Build**: Compiles software assets or verifies configurations.
+3.  **Test**: Executes verification tests to confirm code health.
+4.  **Deploy**: Deploys builds into local or staging environments.
+
+---
+
+## Jenkins & GitHub Screenshots
 
 ### Jenkins Dashboard
 ![Jenkins Dashboard](screenshots/jenkins-dashboard.png)
@@ -50,9 +80,18 @@ Jenkins Pipeline
 ### Pipeline Execution
 ![Jenkins Pipeline Success](screenshots/jenkins-pipeline-success.png)
 
+### GitHub Repository View
+![GitHub Repository](screenshots/github-repository.png)
+
+### GitHub Pull Request
+![GitHub Pull Request](screenshots/github-pull-request.png)
+
+### GitHub Pull Request Merged
+![GitHub Merge Success](screenshots/github-merge-success.png)
+
 ---
 
-## Directory Layout
+## Repository Structure
 
 ```text
 version-control-with-git/
@@ -63,7 +102,7 @@ version-control-with-git/
 ├── LICENSE
 ├── README.md
 ├── assets/
-│   └── git-workflow-diagram.md
+│   └── git-workflow-diagram.png
 ├── docs/
 │   ├── branching-strategy.md
 │   ├── git-commands.md
@@ -82,67 +121,19 @@ version-control-with-git/
 │   └── jenkins-pipeline.md
 └── screenshots/
     ├── README.md
+    ├── github-merge-success.png
+    ├── github-pull-request.png
+    ├── github-repository.png
     ├── jenkins-dashboard.png
     └── jenkins-pipeline-success.png
 ```
 
 ---
 
-## Branching Guidelines
+## Learning Outcomes
 
-This configuration maintains two primary long-lived branches:
-*   `main` — Production-ready release code and version tags.
-*   `dev` — Active integration branch where features are compiled.
-
-Supporting branches include:
-*   `feature/*` — Feature updates branched off `dev`.
-*   `release/*` — Release preparation branches branched off `dev`.
-*   `hotfix/*` — Urgent production bug fixes branched off `main`.
-
----
-
-## Git Operations Reference
-
-### Workspace Setup & Cloning
-
-```bash
-git clone https://github.com/<username>/version-control-with-git.git
-cd version-control-with-git
-```
-
-### Feature Branch Development
-
-```bash
-git switch dev
-git checkout -b feature/<feature-name>
-# Develop updates...
-git add .
-git commit -m "feat: implement workspace changes"
-git push origin feature/<feature-name>
-```
-
-### Integration & Tagging
-
-1.  Open a Pull Request on GitHub from `feature/<feature-name>` into `dev`.
-2.  Once reviewed and merged, prepare the release candidate branch:
-    ```bash
-    git checkout dev
-    git pull origin dev
-    git checkout -b release/v1.1.0
-    ```
-3.  Merge the release branch into `main` and tag the release version:
-    ```bash
-    git checkout main
-    git merge --no-ff release/v1.1.0
-    git tag -a v1.1.0 -m "Release implementation version 1.1.0"
-    git push origin main --tags
-    ```
-
----
-
-## Technical Outcomes
-
-By implementing this repository setup, the following skills are validated:
-1.  **Repository Hygiene**: Formulating semantic branch trees and commit histories.
-2.  **Conflict Resolution**: Handling merging issues during branch integration.
-3.  **CI/CD Pipeline Automation**: Running local automation setups with declarative Jenkins pipelines to test and verify commits.
+*   **Git Branching**: Mastering branching relationships and branch safety protocols.
+*   **Pull Request Workflow**: Designing pull requests that describe changes clearly to reviewers.
+*   **Merge Strategy**: Practicing clean merges to keep development logs linear.
+*   **Release Tagging**: Applying semantic version tagging to organize release history.
+*   **CI/CD Fundamentals**: Mapping code triggers to multi-stage pipeline automations.
