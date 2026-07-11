@@ -61,3 +61,7 @@ git checkout -b hotfix/fix-typo
 git commit -am "fix: correct typo in docs"
 git push origin hotfix/fix-typo
 ```
+
+## Documentation Update
+
+The repository follows a structured Git workflow with feature branches, pull requests, code reviews, and release management practices.
